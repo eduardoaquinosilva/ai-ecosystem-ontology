@@ -68,3 +68,7 @@ Ontology-based Unified Modeling Language (OntoUML).
 **CQ4:** Como um acordo desse tipo é monitorado?
 
 **CQ5:** Quais ações se aplicam a quais atores em caso de ruptura de acordo de compartilhamento de dados?
+
+## Referências
+- [The evolutionary dynamics of the artificial intelligence ecosystem](https://doi.org/10.1287/stsc.2021.0148)
+- [Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)](http://data.europa.eu/eli/reg/2024/1689/oj)
