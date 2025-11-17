@@ -1,0 +1,844 @@
+@prefix : <http://example.com#>.
+@prefix gufo: <http://purl.org/nemo/gufo#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<http://example.com> rdf:type owl:Ontology;
+    owl:imports gufo:.
+:AIActor rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:label "AI Actor"@en.
+:AIGiant rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "AI Giant"@en.
+:AICreator rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "AI Creator"@en.
+:AIIntegrator rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "AI Integrator"@en.
+:AIOperator rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "AI Operator"@en.
+:AITaker rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "AI Taker"@en.
+:AIAgent rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "AI Agent"@en.
+:AIResource rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "AI Resource"@en.
+:HardwareResource rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Hardware Resource"@en.
+:DataResource rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Data Resource"@en.
+:AIAlgorithm rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "AI Algorithm"@en.
+:AIDashboard rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "AI Dashboard"@en.
+:AIPlatform rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "AI Platform"@en.
+:AIPackage rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "AI Package"@en.
+:AISystem rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "AI System"@en.
+:AICommunities rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "AI Communities"@en.
+:AILibraries rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "AI Libraries"@en.
+:AIFramework rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "AI Framework"@en.
+:AIEnablement rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "AI Enablement"@en.
+:AIProduction rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "AI Production"@en.
+:AIConsumption rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "AI Consumption"@en.
+:ComputingPower rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Quality;
+    rdfs:label "Computing power"@en.
+:EdgeComputing rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Edge Computing"@en.
+:Hyperscalers rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Hyperscalers"@en.
+:AIDevEnviroment rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "AI Dev Enviroment"@en.
+:Support rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Support"@en.
+:CloudComputing rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Cloud Computing"@en.
+:AIProduct rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "AI product"@en.
+:AISolution rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "AI solution"@en.
+:Generate rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Generate"@en.
+:Responsibilities rdf:type owl:Class, gufo:Mixin, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Responsibilities"@en.
+:AIProductionCapability rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:IntrinsicMode;
+    rdfs:label "AIProductionCapability"@en.
+:InternalUsage rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Internal Usage"@en.
+:ExternalUsage rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "External Usage"@en.
+:BuyAndSell rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Buy and Sell"@en.
+:OffTheShelf rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Off-the-Shelf"@en.
+:OnlineSpace rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Online Space"@en.
+:Developers rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Developers"@en.
+:Regulator rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Regulator"@en.
+:DataProvider rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Data Provider"@en.
+:DataSharingAgreement rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Data Sharing Agreement"@en.
+:MandatorySharing rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Mandatory Sharing"@en.
+:VoluntarySharing rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Voluntary Sharing"@en.
+:APIAccess rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "API Access"@en.
+:Partnership rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Partnership"@en.
+:Platform rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Platform"@en.
+:RegulatorFramework rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "RegulatorFramework"@en.
+:DMADSA rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label " DMA/DSA"@en.
+:ePrivacy rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "ePrivacy"@en.
+:GDPR rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "GDPR"@en.
+:TechnicalMonitoring rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:IntrinsicMode;
+    rdfs:label "Technical Monitoring"@en.
+:ArchitecturalControl rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Architectural Control"@en.
+:ComplianceRequirement rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:IntrinsicMode;
+    rdfs:label "Compliance Requirement"@en.
+:HighRiskAISystem rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "High Risk AI System"@en.
+:GPAI rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "GP AI"@en.
+:AIProvider rdf:type owl:Class, gufo:RoleMixin, owl:NamedIndividual;
+    rdfs:label "AI Provider"@en.
+:RegulatoryDocument rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Regulatory Document"@en.
+:ConformityDeclaration rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Conformity Declaration"@en.
+:TechnicalDocumentation rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Technical Documentation"@en.
+:ConformityAssesment rdf:type owl:Class, gufo:EventType, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Event;
+    rdfs:label "Conformity Assesment"@en.
+:NationalAccreditationBody rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "National Accreditation Body"@en.
+:ConformityAssessmentBody rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Conformity Assessment Body"@en.
+:NotifyingAuthority rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Notifying Authority"@en.
+:GPAITechnicalDocumentation rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "GP AI Technical Documentation"@en.
+:AIOffice rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "AI Office"@en.
+:SystemicRiskGPAI rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Systemic Risk GP AI"@en.
+:TransparencyDoc rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Transparency Doc"@en.
+:DownstreamProvider rdf:type owl:Class, gufo:RoleMixin, owl:NamedIndividual;
+    rdfs:label "Downstream Provider"@en.
+:CodesOfPratice rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Codes Of Pratice"@en.
+:CEMarking rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:IntrinsicMode;
+    rdfs:label "CE Marking"@en.
+:Operator rdf:type owl:Class, gufo:RoleMixin, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Operator"@en.
+:RegulatoryObligation rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Regulatory Obligation"@en.
+:DataGovernanceObl rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Data Governance Obl"@en.
+:CooperationObl rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Cooperation Obl"@en.
+:DocumentationObl rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Documentation Obl"@en.
+:ObligationViolation rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Obligation Violation"@en.
+:AgreementRupture rdf:type owl:Class, gufo:EventType, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Event;
+    rdfs:label "Agreement Rupture"@en.
+:RegulatoryAction rdf:type owl:Class, gufo:EventType, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Event;
+    rdfs:label "Regulatory Action"@en.
+:FineApplication rdf:type owl:Class, gufo:EventType, owl:NamedIndividual;
+    rdfs:label "Fine Application"@en.
+:DataDocAccess rdf:type owl:Class, gufo:EventType, owl:NamedIndividual;
+    rdfs:label "Data/Doc Access"@en.
+:CorrectiveActions rdf:type owl:Class, gufo:EventType, owl:NamedIndividual;
+    rdfs:label "Corrective Actions"@en.
+:SuspendSystem rdf:type owl:Class, gufo:EventType, owl:NamedIndividual;
+    rdfs:label "Suspend System"@en.
+:MarketRestriction rdf:type owl:Class, gufo:EventType, owl:NamedIndividual;
+    rdfs:label "Market Restriction"@en.
+:ThirdPartyUpstream rdf:type owl:Class, gufo:RoleMixin, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Endurant;
+    rdfs:label "Third Party Upstream"@en.
+:Importer rdf:type owl:Class, gufo:RoleMixin, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Importer"@en.
+:Distributor rdf:type owl:Class, gufo:RoleMixin, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Distributor"@en.
+:AIGiant rdfs:subClassOf :AIActor.
+:AICreator rdfs:subClassOf :AIActor.
+:AIIntegrator rdfs:subClassOf :AIActor.
+:AIOperator rdfs:subClassOf :AIActor.
+:AITaker rdfs:subClassOf :AIActor.
+:AIActor rdfs:subClassOf :AIAgent.
+:HardwareResource rdfs:subClassOf :AIResource.
+:DataResource rdfs:subClassOf :AIResource.
+:AIAlgorithm rdfs:subClassOf :AIResource.
+:AIPlatform rdfs:subClassOf :AIResource.
+:AIDashboard rdfs:subClassOf :AIResource.
+:AISystem rdfs:subClassOf :AIResource.
+:AIPackage rdfs:subClassOf :AIResource.
+:AICommunities rdfs:subClassOf :AIActor.
+:AILibraries rdfs:subClassOf :AIResource.
+:AIFramework rdfs:subClassOf :AIResource.
+:AIEnablement rdfs:subClassOf :AISystem.
+:AIProduction rdfs:subClassOf :AISystem.
+:AIConsumption rdfs:subClassOf :AISystem.
+:Hyperscalers rdfs:subClassOf :AIActor.
+:EdgeComputing rdfs:subClassOf :ComputingPower.
+:CloudComputing rdfs:subClassOf :ComputingPower.
+:InternalUsage rdfs:subClassOf :AIProduct.
+:ExternalUsage rdfs:subClassOf :AIProduct.
+:OffTheShelf rdfs:subClassOf :AIProduct.
+:Developers rdfs:subClassOf :AIActor.
+:Regulator rdfs:subClassOf :AIActor.
+:DataProvider rdfs:subClassOf :AIActor.
+:MandatorySharing rdfs:subClassOf :DataSharingAgreement.
+:VoluntarySharing rdfs:subClassOf :DataSharingAgreement.
+:HighRiskAISystem rdfs:subClassOf :AISystem.
+:GPAI rdfs:subClassOf :AISystem.
+:AIGiant rdfs:subClassOf :AIProvider.
+:AICreator rdfs:subClassOf :AIProvider.
+:ConformityDeclaration rdfs:subClassOf :RegulatoryDocument.
+:TechnicalDocumentation rdfs:subClassOf :RegulatoryDocument.
+:NationalAccreditationBody rdfs:subClassOf :AIActor.
+:ConformityAssessmentBody rdfs:subClassOf :AIActor.
+:NotifyingAuthority rdfs:subClassOf :AIActor.
+:GPAITechnicalDocumentation rdfs:subClassOf :TechnicalDocumentation.
+:SystemicRiskGPAI rdfs:subClassOf :GPAI.
+:AIIntegrator rdfs:subClassOf :DownstreamProvider.
+:DownstreamProvider rdfs:subClassOf :Operator.
+:AIProvider rdfs:subClassOf :Operator.
+:DataGovernanceObl rdfs:subClassOf :RegulatoryObligation.
+:CooperationObl rdfs:subClassOf :RegulatoryObligation.
+:DocumentationObl rdfs:subClassOf :RegulatoryObligation.
+:FineApplication rdfs:subClassOf :RegulatoryAction.
+:DataDocAccess rdfs:subClassOf :RegulatoryAction.
+:CorrectiveActions rdfs:subClassOf :RegulatoryAction.
+:SuspendSystem rdfs:subClassOf :RegulatoryAction.
+:MarketRestriction rdfs:subClassOf :RegulatoryAction.
+:AICreator rdfs:subClassOf :ThirdPartyUpstream.
+:DataProvider rdfs:subClassOf :ThirdPartyUpstream.
+:AIIntegrator rdfs:subClassOf :Importer.
+:Developers rdfs:subClassOf :Importer.
+:AIIntegrator rdfs:subClassOf :Distributor.
+:AIProvider rdfs:subClassOf :Distributor.
+[ rdf:type owl:AllDisjointClasses ] owl:members (:AIDashboard :AIAlgorithm :AIPlatform).
+[ rdf:type owl:AllDisjointClasses ] owl:members (:AISystem :AIPackage).
+:AISystem owl:equivalentClass [
+  rdf:type owl:Class;
+  owl:unionOf (:AIProduction :AIEnablement :AIConsumption)
+].
+:uses_1 rdf:type owl:ObjectProperty;
+    rdfs:domain :AIAlgorithm;
+    rdfs:range :DataResource;
+    rdfs:label "uses"@en;
+    rdf:type gufo:MaterialRelationshipType.
+:aiDevEnviromentHasHyperscalers rdf:type owl:ObjectProperty;
+    rdfs:domain :AIDevEnviroment;
+    rdfs:range :Hyperscalers;
+    rdf:type gufo:MaterialRelationshipType.
+:provides rdf:type owl:ObjectProperty;
+    rdfs:domain :Hyperscalers;
+    rdfs:range :ComputingPower;
+    rdfs:label "provides"@en;
+    rdf:type gufo:MaterialRelationshipType.
+:aiDevEnviromentHasAiEnablement rdf:type owl:ObjectProperty;
+    rdfs:domain :AIDevEnviroment;
+    rdfs:range :AIEnablement;
+    rdf:type gufo:MaterialRelationshipType.
+:hyperscalersHasAiEnablement rdf:type owl:ObjectProperty;
+    rdfs:domain :Hyperscalers;
+    rdfs:range :AIEnablement;
+    rdf:type gufo:MaterialRelationshipType.
+:aiGiantHasResponsibilities rdf:type owl:ObjectProperty;
+    rdfs:domain :AIGiant;
+    rdfs:range :Responsibilities.
+:responsibilitiesHasAiProductionCapability rdf:type owl:ObjectProperty;
+    rdfs:domain :Responsibilities;
+    rdfs:range :AIProductionCapability.
+:Produces rdf:type owl:ObjectProperty;
+    rdfs:domain :AIGiant;
+    rdfs:range :AIProduct;
+    rdfs:label "Produces"@en;
+    rdf:type gufo:MaterialRelationshipType.
+:uses rdf:type owl:ObjectProperty;
+    rdfs:domain :InternalUsage;
+    rdfs:range :AIGiant;
+    rdfs:label "uses"@en;
+    rdf:type gufo:MaterialRelationshipType.
+:aiCreatorHasResponsibilities rdf:type owl:ObjectProperty;
+    rdfs:domain :AICreator;
+    rdfs:range :Responsibilities.
+:produces rdf:type owl:ObjectProperty;
+    rdfs:domain :AICreator;
+    rdfs:range :ExternalUsage;
+    rdfs:label "produces"@en;
+    rdf:type gufo:MaterialRelationshipType.
+:aiIntegratorHasResponsibilities rdf:type owl:ObjectProperty;
+    rdfs:domain :AIIntegrator;
+    rdfs:range :Responsibilities.
+:responsibilitiesHasBuyAndSell rdf:type owl:ObjectProperty;
+    rdfs:domain :Responsibilities;
+    rdfs:range :BuyAndSell.
+:Uses rdf:type owl:ObjectProperty;
+    rdfs:domain :AITaker;
+    rdfs:range :OffTheShelf;
+    rdfs:label "Uses"@en;
+    rdf:type gufo:MaterialRelationshipType.
+:Uses_1 rdf:type owl:ObjectProperty;
+    rdfs:domain :AIOperator;
+    rdfs:range :AIProduct;
+    rdfs:label "Uses"@en;
+    rdf:type gufo:MaterialRelationshipType.
+:aiCommunitiesHasResponsibilities rdf:type owl:ObjectProperty;
+    rdfs:domain :AICommunities;
+    rdfs:range :Responsibilities.
+:responsibilitiesHasOnlineSpace rdf:type owl:ObjectProperty;
+    rdfs:domain :Responsibilities;
+    rdfs:range :OnlineSpace.
+:Provides rdf:type owl:ObjectProperty;
+    rdfs:domain :AICommunities;
+    rdfs:range :OnlineSpace;
+    rdfs:label "Provides"@en;
+    rdf:type gufo:MaterialRelationshipType.
+:Contributes rdf:type owl:ObjectProperty;
+    rdfs:domain :Developers;
+    rdfs:range :OnlineSpace;
+    rdfs:label "Contributes"@en;
+    rdf:type gufo:MaterialRelationshipType.
+:GetData rdf:type owl:ObjectProperty;
+    rdfs:domain :DataResource;
+    rdfs:range :DataProvider;
+    rdfs:label "Get Data"@en;
+    rdf:type gufo:MaterialRelationshipType.
+:gdprHasRegulatorFramework rdf:type owl:ObjectProperty;
+    rdfs:domain :GDPR;
+    rdfs:range :RegulatorFramework.
+:ePrivacyHasRegulatorFramework rdf:type owl:ObjectProperty;
+    rdfs:domain :ePrivacy;
+    rdfs:range :RegulatorFramework.
+:dmaDsaHasRegulatorFramework rdf:type owl:ObjectProperty;
+    rdfs:domain :DMADSA;
+    rdfs:range :RegulatorFramework.
+:ToMonitoringAPI rdf:type owl:ObjectProperty;
+    rdfs:domain :APIAccess;
+    rdfs:range :DataSharingAgreement;
+    rdfs:label "To monitoring API"@en;
+    rdf:type gufo:MaterialRelationshipType.
+:Monitoring rdf:type owl:ObjectProperty;
+    rdfs:domain :ArchitecturalControl;
+    rdfs:range :DataSharingAgreement;
+    rdfs:label "Monitoring"@en;
+    rdf:type gufo:MaterialRelationshipType.
+:puts_in_market rdf:type owl:ObjectProperty;
+    rdfs:domain :AIProvider;
+    rdfs:range :AISystem;
+    rdfs:label "puts_in_market"@en.
+:elaborates_1 rdf:type owl:ObjectProperty;
+    rdfs:domain :AIProvider;
+    rdfs:range :ConformityDeclaration;
+    rdfs:label "elaborates"@en.
+:maintains rdf:type owl:ObjectProperty;
+    rdfs:domain :AIProvider;
+    rdfs:range :TechnicalDocumentation;
+    rdfs:label "maintains"@en.
+:accredits rdf:type owl:ObjectProperty;
+    rdfs:domain :NationalAccreditationBody;
+    rdfs:range :ConformityAssessmentBody;
+    rdfs:label "accredits"@en.
+:notifies rdf:type owl:ObjectProperty;
+    rdfs:domain :NotifyingAuthority;
+    rdfs:range :ConformityAssessmentBody;
+    rdfs:label "notifies"@en.
+:performed_by rdf:type owl:ObjectProperty;
+    rdfs:domain :ConformityAssesment;
+    rdfs:range :ConformityAssessmentBody;
+    rdfs:label "performed_by"@en.
+:generates rdf:type owl:ObjectProperty;
+    rdfs:domain :ConformityAssesment;
+    rdfs:range :ConformityDeclaration;
+    rdfs:label "generates"@en.
+:applies_to rdf:type owl:ObjectProperty;
+    rdfs:domain :ConformityAssesment;
+    rdfs:range :HighRiskAISystem;
+    rdfs:label "applies_to"@en.
+:supervised_by rdf:type owl:ObjectProperty;
+    rdfs:domain :GPAI;
+    rdfs:range :AIOffice;
+    rdfs:label "supervised_by"@en.
+:elaborates rdf:type owl:ObjectProperty;
+    rdfs:domain :AIOffice;
+    rdfs:range :CodesOfPratice;
+    rdfs:label "elaborates"@en.
+:applies_to_1 rdf:type owl:ObjectProperty;
+    rdfs:domain :ConformityAssesment;
+    rdfs:range :SystemicRiskGPAI;
+    rdfs:label "applies_to"@en.
+:generates_1 rdf:type owl:ObjectProperty;
+    rdfs:domain :ConformityAssesment;
+    rdfs:range :CEMarking;
+    rdfs:label "generates"@en.
+:must_have rdf:type owl:ObjectProperty;
+    rdfs:domain :AISystem;
+    rdfs:range :ConformityDeclaration;
+    rdfs:label "must_have"@en.
+:aiProviderHasDownstreamProvider rdf:type owl:ObjectProperty;
+    rdfs:domain :AIProvider;
+    rdfs:range :DownstreamProvider;
+    rdf:type gufo:MaterialRelationshipType.
+:brings_about rdf:type owl:ObjectProperty;
+    rdfs:domain :AgreementRupture;
+    rdfs:range :ObligationViolation;
+    rdfs:label "brings_about"@en.
+:affects rdf:type owl:ObjectProperty;
+    rdfs:domain :AgreementRupture;
+    rdfs:range :DataSharingAgreement;
+    rdfs:label "affects"@en.
+:implies_to rdf:type owl:ObjectProperty;
+    rdfs:domain :AgreementRupture;
+    rdfs:range :RegulatoryAction;
+    rdfs:label "implies_to"@en.
+:is_applied_to_4 rdf:type owl:ObjectProperty;
+    rdfs:domain :FineApplication;
+    rdfs:range :ThirdPartyUpstream;
+    rdfs:label "is_applied_to"@en.
+:is_applied_to_15 rdf:type owl:ObjectProperty;
+    rdfs:domain :FineApplication;
+    rdfs:range :Operator;
+    rdfs:label "is_applied_to"@en.
+:is_applied_to_5 rdf:type owl:ObjectProperty;
+    rdfs:domain :FineApplication;
+    rdfs:range :Importer;
+    rdfs:label "is_applied_to"@en.
+:is_applied_to_2 rdf:type owl:ObjectProperty;
+    rdfs:domain :Distributor;
+    rdfs:range :FineApplication;
+    rdfs:label "is_applied_to"@en.
+:is_applied_to_6 rdf:type owl:ObjectProperty;
+    rdfs:domain :DataDocAccess;
+    rdfs:range :Importer;
+    rdfs:label "is_applied_to"@en.
+:is_applied_to_3 rdf:type owl:ObjectProperty;
+    rdfs:domain :DataDocAccess;
+    rdfs:range :ThirdPartyUpstream;
+    rdfs:label "is_applied_to"@en.
+:is_applied_to_14 rdf:type owl:ObjectProperty;
+    rdfs:domain :DataDocAccess;
+    rdfs:range :Operator;
+    rdfs:label "is_applied_to"@en.
+:is_applied_to_1 rdf:type owl:ObjectProperty;
+    rdfs:domain :DataDocAccess;
+    rdfs:range :Distributor;
+    rdfs:label "is_applied_to"@en.
+:is_applied_to_16 rdf:type owl:ObjectProperty;
+    rdfs:domain :CorrectiveActions;
+    rdfs:range :Importer;
+    rdfs:label "is_applied_to"@en.
+:is_applied_to_8 rdf:type owl:ObjectProperty;
+    rdfs:domain :CorrectiveActions;
+    rdfs:range :ThirdPartyUpstream;
+    rdfs:label "is_applied_to"@en.
+:is_appliedTo rdf:type owl:ObjectProperty;
+    rdfs:domain :Operator;
+    rdfs:range :CorrectiveActions;
+    rdfs:label "is_applied-to"@en.
+:is_applied_to_11 rdf:type owl:ObjectProperty;
+    rdfs:domain :Distributor;
+    rdfs:range :CorrectiveActions;
+    rdfs:label "is_applied_to"@en.
+:is_applied_to rdf:type owl:ObjectProperty;
+    rdfs:domain :SuspendSystem;
+    rdfs:range :Importer;
+    rdfs:label "is_applied_to"@en.
+:is_applied_to_10 rdf:type owl:ObjectProperty;
+    rdfs:domain :SuspendSystem;
+    rdfs:range :Operator;
+    rdfs:label "is_applied_to"@en.
+:is_applied_to_9 rdf:type owl:ObjectProperty;
+    rdfs:domain :SuspendSystem;
+    rdfs:range :Distributor;
+    rdfs:label "is_applied_to"@en.
+:is_applied_to_7 rdf:type owl:ObjectProperty;
+    rdfs:domain :MarketRestriction;
+    rdfs:range :Importer;
+    rdfs:label "is_applied_to"@en.
+:is_applied_to_12 rdf:type owl:ObjectProperty;
+    rdfs:domain :MarketRestriction;
+    rdfs:range :Operator;
+    rdfs:label "is_applied_to"@en.
+:is_applied_to_13 rdf:type owl:ObjectProperty;
+    rdfs:domain :MarketRestriction;
+    rdfs:range :Distributor;
+    rdfs:label "is_applied_to"@en.
+:AIDevEnviroment rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Support
+].
+:Hyperscalers rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :Support
+].
+:Support rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Hyperscalers
+].
+:AIConsumption rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Generate
+].
+:Generate rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :AIProduct
+].
+:AIProduct rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Generate
+].
+:Generate rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:wasCreatedIn;
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :AISolution
+].
+:AIProductionCapability rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :AIGiant
+].
+:AIGiant rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :AIProductionCapability
+].
+:AICreator rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :AIProductionCapability
+].
+:AIProductionCapability rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :AICreator
+].
+:AIIntegrator rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :BuyAndSell
+].
+:BuyAndSell rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :AIIntegrator
+], [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :AIProduct
+].
+:DataSharingAgreement rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :Regulator
+].
+:Regulator rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :DataSharingAgreement
+].
+:DataResource rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :DataSharingAgreement
+].
+:DataSharingAgreement rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :AITaker
+].
+:AITaker rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :DataSharingAgreement
+].
+:DataSharingAgreement rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :AIGiant
+].
+:AIGiant rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :DataSharingAgreement
+].
+:APIAccess rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :AITaker
+].
+:AITaker rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :APIAccess
+].
+:APIAccess rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :AIGiant
+].
+:AIGiant rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :APIAccess
+].
+:Partnership rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :AIGiant
+].
+:AIGiant rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Partnership
+].
+:Partnership rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :AITaker
+].
+:AITaker rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Partnership
+].
+:Platform rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :AIGiant
+].
+:AIGiant rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Platform
+].
+:DataProvider rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Platform
+].
+:RegulatorFramework rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :DataSharingAgreement
+], [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :Regulator
+].
+:Regulator rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :RegulatorFramework
+].
+:DataSharingAgreement rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :TechnicalMonitoring
+].
+:TechnicalMonitoring rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :DataSharingAgreement
+].
+:ArchitecturalControl rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :AIGiant
+], [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :AITaker
+].
+:AITaker rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :ArchitecturalControl
+].
+:RegulatorFramework rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :ComplianceRequirement
+].
+:ComplianceRequirement rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :RegulatorFramework
+].
+:DataSharingAgreement rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :ComplianceRequirement
+].
+:ComplianceRequirement rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :DataSharingAgreement
+].
+:AIProvider rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :TransparencyDoc
+].
+:TransparencyDoc rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :AIProvider
+].
+:DownstreamProvider rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :TransparencyDoc
+].
+:TransparencyDoc rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :DownstreamProvider
+].
+:CEMarking rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :HighRiskAISystem
+].
+:HighRiskAISystem rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :CEMarking
+].
+:RegulatoryObligation rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :Operator
+].
+:Operator rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :RegulatoryObligation
+].
+:Regulator rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :RegulatoryObligation
+].
+:RegulatoryObligation rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Regulator
+].
+:ObligationViolation rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:someValuesFrom :Operator
+].
+:Operator rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :ObligationViolation
+].
+:ObligationViolation rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :RegulatoryObligation
+].
