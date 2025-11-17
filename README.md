@@ -54,20 +54,47 @@ Ontology-based Unified Modeling Language (OntoUML).
 **Uso 7:** Fornecer aos reguladores (Regulators) o caminho lógico e formal que justifica a aplicação de Regulatory Action.
 
 ### Requisitos Não Funcionais
-- A ontologia deve descrever como um ecossistema de IA e seus componentes funcionam.
-- Deve ser modular, permitindo que seus componentes possam ser reutilizados em outras ontologias.
-- Documentação em um repositório do github.
+**RNF1:** A ontologia deve descrever como um ecossistema de IA e seus componentes funcionam.
+**RNF2:** Deve ser modular, permitindo que seus componentes possam ser reutilizados em outras ontologias.
+**RNF2:** Documentação em um repositório do github.
 
 ### Requisitos Funcionais
-**CQ1:** Quais são os atores e suas respectivas responsabilidades em um ecossistema de IA?
+**RF1:** Quais são os atores e suas respectivas responsabilidades em um ecossistema de IA?
 
-**CQ2:** Como ocorrem a certificação e a acreditação de atores de um ecossistema de IA?
+**RF2:** Como ocorrem a certificação e a acreditação de atores de um ecossistema de IA?
 
-**CQ3:** Como um acordo de compartilhamento ou transferência de dados sensíveis é formado em um ecossistema de IA?
+**RF3:** Como um acordo de compartilhamento ou transferência de dados sensíveis é formado em um ecossistema de IA?
 
-**CQ4:** Como um acordo desse tipo é monitorado?
+**RF4:** Como um acordo desse tipo é monitorado?
 
-**CQ5:** Quais ações se aplicam a quais atores em caso de ruptura de acordo de compartilhamento de dados?
+**RF5:** Quais ações se aplicam a quais atores em caso de ruptura de acordo de compartilhamento de dados?
+
+## Views Overview
+
+#### View dos Agentes de IA e suas responsabilidades:
+
+<img src="images/agent_view.jpg" width="1000">
+
+#### View dos acordos de compartilhamento de dados, mostrando como são monitorados e também quais são as ações que se aplicam aos atores em caso de ruptura do acordado:
+
+<img src="images/agreement_view.jpg" width="1000">
+
+#### View de como os recursos de IA se relacionam:
+
+<img src="images/ai_resource_view.jpg" width="1000">
+
+#### View que demonstra cada etapa de um sistema de IA: 
+
+<img src="images/ai_system_view.jpg" width="1000">
+
+#### View que mostra como é feito a acreditação e certificação dos atores do ecossistema de IA:
+
+<img src="images/certification_view.jpg" width="1000">
+
+## Desenvolvedores
+
+- <a href="https://github.com/eduardoaquinosilva">Eduardo Aquino</a>
+- <a href="https://github.com/ratelp">Rafael Martinho</a>
 
 ## Referências
 - [The evolutionary dynamics of the artificial intelligence ecosystem](https://doi.org/10.1287/stsc.2021.0148)
