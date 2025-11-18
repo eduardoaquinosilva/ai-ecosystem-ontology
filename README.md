@@ -7,6 +7,7 @@
 - **[images/ai_resource_view.jpg](./images/ai_resource_view.jpg):** Diagrama de classes focado nos recursos de IA.
 - **[images/ai_system_view.jpg](./images/ai_system_view.jpg):** Diagrama de classes focado no conceito do sistema de IA.
 - **[images/certification_view.jpg](./images/certification_view.jpg):** Diagrama de classes focado nos processos de certificação e acreditação.
+- **[ORSD_Ecossistema_de_IA](./ORSD_Ecossistema_de_IA.pdf):** Documento de Especificação de Requisitos de Ontologia que descreve o propósito da ontologia, seus possíveis usuários, casos de uso e requisitos.
 - **[Projeto_-_Ontologia_de_Ecossistema_de_IA.vpp](./Projeto_-_Ontologia_de_Ecossistema_de_IA.vpp):** Projeto desenvolvido com o Visual Paradigm que contém a modelagem das views.
 - **[ai-ecosystem.ttl](./ai-ecosystem.ttl):** Arquivo da ontologia em formato Turtle.
 
@@ -55,7 +56,9 @@ Ontology-based Unified Modeling Language (OntoUML).
 
 ### Requisitos Não Funcionais
 **RNF1:** A ontologia deve descrever como um ecossistema de IA e seus componentes funcionam.
+
 **RNF2:** Deve ser modular, permitindo que seus componentes possam ser reutilizados em outras ontologias.
+
 **RNF2:** Documentação em um repositório do github.
 
 ### Requisitos Funcionais
