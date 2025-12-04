@@ -1,0 +1,417 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem/"
+     xml:base="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#componentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#componentOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Relator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#uses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Algorithm"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#componentOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Package"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Communities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Communities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Consumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Consumption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#System_Phase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Creator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Creator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Dashboard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Dashboard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Enablement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Enablement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#System_Phase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Framework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Giant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Giant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Integrator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Integrator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Libraries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Libraries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Operator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Operator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Package -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Package">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#componentOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Platform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Platform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Production -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Production">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#System_Phase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Solution"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Taker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Taker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Conformity_Assessment_Body -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Conformity_Assessment_Body">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Provider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Developers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Developers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#External_Usage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#External_Usage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#GP_AI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#GP_AI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Generate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Generate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Relator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Hardware_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Hardware_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#High_Risk_AI_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#High_Risk_AI_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Hyperscalers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Hyperscalers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Importer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Importer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Internal_Usage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Internal_Usage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#National_Accreditation_Body -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#National_Accreditation_Body">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Notifying_Authority -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Notifying_Authority">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Off_The_Shelf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Off_The_Shelf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Phase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Phase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Relator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Relator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Relator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#System_Phase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#System_Phase">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Consumption"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Enablement"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Production"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_System"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Algorithm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Dashboard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Platform"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Consumption"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Enablement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Production"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
