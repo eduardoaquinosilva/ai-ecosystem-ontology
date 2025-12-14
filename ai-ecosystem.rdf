@@ -21,9 +21,146 @@
     
 
 
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#accredits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#accredits"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#affects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#affects"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#applies_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#applies_to"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#brings_about -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#brings_about"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#characterization -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#characterization"/>
+    
+
+
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#componentOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#componentOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#continuous_monitoring -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#continuous_monitoring">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#characterization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#creation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#creation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#elaborates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#elaborates"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#generates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#generates"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#get_data_from -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#get_data_from">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#governs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#governs">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#implies_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#implies_to"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#isPhaseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#isPhaseOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Phase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Kind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_applied_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_applied_to"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_controlled -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_controlled">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_governed_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_governed_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_regulated_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_regulated_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_supplied_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_supplied_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#maintains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#maintains"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#material -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#material"/>
     
 
 
@@ -35,11 +172,103 @@
     
 
 
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#monitores -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#monitores">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#must_have -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#must_have"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#notifies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#notifies"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#performed_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#performed_by"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Kind"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#produces">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#provides -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#provides">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#provides_api -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#provides_api"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#provides_infra -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#provides_infra"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#puts_in_market -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#puts_in_market"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#regulates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#regulates">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#requires_data -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#requires_data">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#shapes_agreement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#shapes_agreement">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#uses -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#uses">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Algorithm"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Resource"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#material"/>
     </owl:ObjectProperty>
     
 
@@ -57,7 +286,9 @@
 
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Kind"/>
+    </owl:Class>
     
 
 
@@ -71,14 +302,12 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Package"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Communities -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Communities">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#uses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -94,7 +323,31 @@
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Creator -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Creator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#produces"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#External_Usage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#provides"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Upstream_Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#puts_in_market"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -103,6 +356,32 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Dashboard">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#componentOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Dev_Environment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Dev_Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Dev_Environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Kind"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#material"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Enablement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#material"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Hyperscaler"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -115,18 +394,46 @@
     
 
 
-    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Framework -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Framework">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Giant -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Giant">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#produces"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Product"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#provides_api"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Taker"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#provides_infra"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Taker"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#puts_in_market"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#uses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Internal_Usage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -134,15 +441,27 @@
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Integrator -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Integrator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Libraries -->
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Office -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Libraries">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Office">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Kind"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#elaborates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Code_Of_Practice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -150,7 +469,19 @@
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Operator -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Operator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#uses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Product"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -174,13 +505,21 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Platform">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#componentOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Dev_Environment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Product -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Product"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Product">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Kind"/>
+    </owl:Class>
     
 
 
@@ -192,15 +531,80 @@
     
 
 
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Production_Capability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Production_Capability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Mode"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#characterization"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Creator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#characterization"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Giant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Provider">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#puts_in_market"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_System"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#RoleMixin"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#elaborates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Conformity_Declaration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#maintains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Technical_Documentation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#material"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Integrator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Kind"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Solution -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Solution"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Solution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Kind"/>
+    </owl:Class>
     
 
 
@@ -208,6 +612,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_System">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#must_have"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Conformity_Declaration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -215,7 +625,159 @@
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Taker -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Taker">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#uses"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Off_The_Shelf"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Agreement_Rupture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Agreement_Rupture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#affects"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Sharing_Agreement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#brings_about"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Obligation_Violation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Architectural_Control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Architectural_Control">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Relator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_controlled"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Taker"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_governed_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Giant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#monitores"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Sharing_Agreement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Buy_And_Sell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Buy_And_Sell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Relator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Integrator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Product"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#CE_Marking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#CE_Marking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Mode"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#characterization"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#High_Risk_AI_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Code_Of_Practice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Code_Of_Practice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Kind"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Compliance_Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Compliance_Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Mode"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#characterization"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Sharing_Agreement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#characterization"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulator_Framework"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Conformity_Assessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Conformity_Assessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#applies_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#High_Risk_AI_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#generates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#CE_Marking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#generates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Conformity_Declaration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#performed_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Conformity_Assessment_Body"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -223,7 +785,59 @@
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Conformity_Assessment_Body -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Conformity_Assessment_Body">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#accredits"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#National_Accreditation_Body"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#notifies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Notifying_Authority"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Conformity_Declaration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Conformity_Declaration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulatory_Doc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Corrective_Actions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Corrective_Actions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulatory_Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_applied_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Integrator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_applied_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_applied_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Third_Party_Upstream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -231,7 +845,25 @@
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Provider -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Provider">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#get_data_from"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#provides"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -239,15 +871,72 @@
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Resource -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Resource">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Upstream_Resource"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Developers -->
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Sharing_Agreement -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Developers">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Sharing_Agreement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Relator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_regulated_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#requires_data"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Giant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#requires_data"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Taker"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#shapes_agreement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulator_Framework"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Developer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Developer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#implies_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulatory_Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -256,6 +945,32 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#External_Usage">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Fine_Application -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Fine_Application">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulatory_Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_applied_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Integrator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_applied_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_applied_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Third_Party_Upstream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -272,6 +987,24 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Generate">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Relator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#creation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Solution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Product"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -279,7 +1012,7 @@
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Hardware_Resource -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Hardware_Resource">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Upstream_Resource"/>
     </owl:Class>
     
 
@@ -292,18 +1025,22 @@
     
 
 
-    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Hyperscalers -->
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Hyperscaler -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Hyperscalers">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Importer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Importer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Hyperscaler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#material"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Enablement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -316,10 +1053,54 @@
     
 
 
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Kind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Kind"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Market_Restriction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Market_Restriction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulatory_Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_applied_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Integrator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_applied_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Mixin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Mixin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Mode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Mode"/>
+    
+
+
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#National_Accreditation_Body -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#National_Accreditation_Body">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -327,7 +1108,27 @@
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Notifying_Authority -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Notifying_Authority">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Obligation_Violation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Obligation_Violation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Relator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulatory_Obligation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -342,14 +1143,92 @@
 
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Phase -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Phase"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Phase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#System_Phase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Platform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Platform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Relator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_governed_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Giant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_supplied_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Quality"/>
     
 
 
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulator -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulator_Framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulator_Framework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Relator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_governed_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulatory_Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulatory_Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulatory_Doc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulatory_Doc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Kind"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulatory_Obligation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulatory_Obligation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Relator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -360,10 +1239,54 @@
     
 
 
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#RoleMixin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#RoleMixin"/>
+    
+
+
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Support -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Support">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Relator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Dev_Environment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Hyperscaler"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Suspend_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Suspend_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulatory_Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_applied_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Integrator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_applied_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -380,7 +1303,112 @@
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_System"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Phase"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#isPhaseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Technical_Documentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Technical_Documentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulatory_Doc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Technical_Monitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Technical_Monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Mode"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#continuous_monitoring"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data_Sharing_Agreement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Third_Party_Upstream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Third_Party_Upstream">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#playedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#provides"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Upstream_Resource"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#RoleMixin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Transparency_Doc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Transparency_Doc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Relator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Integrator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#mediation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Upstream_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Upstream_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data/Doc_Access -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Data/Doc_Access">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Regulatory_Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_applied_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Integrator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_applied_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#is_applied_to"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Third_Party_Upstream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -396,9 +1424,11 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Algorithm"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Dashboard"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Platform"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Dev_Environment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Product"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Resource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Solution"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -407,6 +1437,15 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Consumption"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Enablement"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Production"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Buy_And_Sell"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Generate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Support"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Transparency_Doc"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
