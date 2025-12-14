@@ -5,7 +5,8 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ai-ecosystem="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem"/>
     
 
@@ -1079,12 +1080,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Mixin -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Mixin"/>
-    
-
-
     <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Mode -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Mode"/>
@@ -1166,12 +1161,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Quality -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Quality"/>
     
 
 
@@ -1410,6 +1399,68 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#chatbot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#chatbot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_System"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#firm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#firm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#gpu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#gpu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Hardware_Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#instance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#instance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+        <ai-ecosystem:playedBy rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#firm"/>
+        <ai-ecosystem:puts_in_market rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#chatbot"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#instance2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#instance2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#Role"/>
+        <ai-ecosystem:playedBy rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#manufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#manufacturer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#manufacturer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eduaq/ontologies/2025/11/ai-ecosystem#AI_Actor"/>
+    </owl:NamedIndividual>
     
 
 
