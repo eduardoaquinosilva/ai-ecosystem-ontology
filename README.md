@@ -7,6 +7,10 @@
 - **[images/ai_resource_view.jpg](./images/ai_resource_view.jpg):** Diagrama de classes focado nos recursos de IA.
 - **[images/ai_system_view.jpg](./images/ai_system_view.jpg):** Diagrama de classes focado no conceito do sistema de IA.
 - **[images/certification_view.jpg](./images/certification_view.jpg):** Diagrama de classes focado nos processos de certificação e acreditação.
+- **[images/class_hierarchy1.png](./images/class_hierarchy1.png):** Hierarquia de classes especificando Event e Kind.
+- **[images/class_hierarchy2.png](./images/class_hierarchy2.png):** Hierarquia de classes especificando Mode, Phase e Relator.
+- **[images/class_hierarchy3.png](./images/class_hierarchy3.png):** Hierarquia de classes especificando Role e RoleMixin.
+- **[images/intances_inference.png](./images/intances_inference.png):** Inferências realizadas a partir de instâncias criadas e das definições das classes da ontologia.
 - **[ORSD_Ecossistema_de_IA](./ORSD_Ecossistema_de_IA.pdf):** Documento de Especificação de Requisitos de Ontologia que descreve o propósito da ontologia, seus possíveis usuários, casos de uso e requisitos.
 - **[Projeto_-_Ontologia_de_Ecossistema_de_IA.vpp](./Projeto_-_Ontologia_de_Ecossistema_de_IA.vpp):** Projeto desenvolvido com o Visual Paradigm que contém a modelagem das views.
 - **[ai-ecosystem.rdf](./ai-ecosystem.rdf):** Arquivo da ontologia em formato RDF/XML com uma versão simplificada da ontologia escrita em OWL.
@@ -45,7 +49,7 @@ Ontology-based Unified Modeling Language (OntoUML) e Web Ontology Language (OWL)
 
 **Uso 2:** Evidenciar as responsabilidades regulatórias específicas que recaem sobre um AI Actor de um sistema.
 
-**Uso 3:** Auxiliar na avaliação preliminar de um High Risk AI System para determinar a necessidade de Conformity Assessment e a geração de Technical Documentation.
+**Uso 3:** Auxiliar na avaliação preliminar de um High Risk AI System para determinar a necessidade de Conformity Assessment e de geração de Technical Documentation.
 
 **Uso 4:** Rastrear a relação entre o Conformity Assessment Body e a Notifying Authority para validar a acreditação e o processo de certificação do sistema.
 
