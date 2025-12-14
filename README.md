@@ -96,6 +96,11 @@ Ontology-based Unified Modeling Language (OntoUML) e Web Ontology Language (OWL)
 <img src="images/certification_view.jpg" width="1000">
 
 ## Hierarquia de Classes
+<img src="images/class_hierarchy1.png" width="1000">
+
+<img src="images/class_hierarchy2.png" width="1000">
+
+<img src="images/class_hierarchy3.png" width="1000">
 
 ## Desenvolvedores
 
