@@ -105,6 +105,8 @@ Ontology-based Unified Modeling Language (OntoUML) e Web Ontology Language (OWL)
 ## Exemplos de Inferência
 Para exemplificar inferências que poderiam ser feitas a partir da versão OWL da ontologia, foram criadas as instâncias `firm` e `manufacturer` para a classe AI_Actor, a instância `chatbot` para a classe AI_System e a instância `gpu` para a classe Hardware_Resource. Com isso, foram criadas as instâncias `instance1` e `instance2`, que receberam Object Properties Assertions e Types, permitindo que o reasoner inferisse corretamente o que são.
 
+<img src="images/instances_inference.png" width="1000">
+
 ## Desenvolvedores
 
 - <a href="https://github.com/eduardoaquinosilva">Eduardo Aquino</a>
