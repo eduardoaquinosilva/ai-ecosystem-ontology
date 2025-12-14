@@ -9,6 +9,7 @@
 - **[images/certification_view.jpg](./images/certification_view.jpg):** Diagrama de classes focado nos processos de certificação e acreditação.
 - **[ORSD_Ecossistema_de_IA](./ORSD_Ecossistema_de_IA.pdf):** Documento de Especificação de Requisitos de Ontologia que descreve o propósito da ontologia, seus possíveis usuários, casos de uso e requisitos.
 - **[Projeto_-_Ontologia_de_Ecossistema_de_IA.vpp](./Projeto_-_Ontologia_de_Ecossistema_de_IA.vpp):** Projeto desenvolvido com o Visual Paradigm que contém a modelagem das views.
+- **[ai-ecosystem.rdf](./ai-ecosystem.rdf):** Arquivo da ontologia em formato RDF/XML com uma versão simplificada da ontologia escrita em OWL.
 - **[ai-ecosystem.ttl](./ai-ecosystem.ttl):** Arquivo da ontologia em formato Turtle.
 
 ## ORSD
@@ -23,10 +24,10 @@ A ontologia modelará:
 - Ciclo de Vida da IA e Componentes: As etapas de Habilitação (Enablement), Produção (Production), e Consumo (Consumption) da IA, assim como conceitos de Sistemas de IA de Alto Risco (High-Risk AI Systems) e Modelos de IA de Propósito Geral (General-Purpose AI Models);
 - Requisitos e Conformidade: Conceitos como Avaliação de Conformidade (Conformity Assessment), Documentação Técnica (Technical Documentation) ou Ação Regulatória (Regulatory Action).
 - Relações Jurídico-Contratuais: Acordos e consequências como Acordo de Compartilhamento de Dados (Data Sharing Agreement) ou Obrigação Regulatória (Regulatory Obligation).
-Devido à maior quantidade de documentação de referência foi adotada uma abordagem que se concentra nos conceitos e estruturas do quadro regulatório da União Europeia (AI Act).
+Devido à maior quantidade de documentação de referência, foi adotada uma abordagem que se concentra nos conceitos e estruturas do quadro regulatório da União Europeia (AI Act).
 
-### Linguagem de Implementação
-Ontology-based Unified Modeling Language (OntoUML).
+### Linguagens Utilizadas
+Ontology-based Unified Modeling Language (OntoUML) e Web Ontology Language (OWL).
 
 ### Usuários-Finais Pretendidos
 **Usuário 1:** Autoridades Reguladoras e Fiscais
@@ -50,7 +51,7 @@ Ontology-based Unified Modeling Language (OntoUML).
 
 **Uso 5:** Facilitar a criação de um modelo de Data Sharing Agreement entre um AI Giant e um AI Taker.
 
-**Uso 6:** Dada uma Agreement Rupture, identificar imediatamente o Operator sobre o qual as Regulatory Actions devem ser aplicadas.
+**Uso 6:** Dada uma Agreement Rupture, identificar imediatamente o Operator ao qual as Regulatory Actions devem ser aplicadas.
 
 **Uso 7:** Fornecer aos reguladores (Regulators) o caminho lógico e formal que justifica a aplicação de Regulatory Action.
 
@@ -90,9 +91,11 @@ Ontology-based Unified Modeling Language (OntoUML).
 
 <img src="images/ai_system_view.jpg" width="1000">
 
-#### View que mostra como é feito a acreditação e certificação dos atores do ecossistema de IA:
+#### View que mostra como é feita a acreditação e certificação dos atores do ecossistema de IA:
 
 <img src="images/certification_view.jpg" width="1000">
+
+## Hierarquia de Classes
 
 ## Desenvolvedores
 
